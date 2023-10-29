@@ -3,7 +3,7 @@ import css from "./css/PostItem.module.css";
 
 function PostItemAPI(props) {
     return (
-        props.posts.map(post => {
+        props.savedPosts.map(post => {
             // Extra task destructuring 
             const {id, user, type, tags, webformatURL} = post
             return <div className={css.SearchItem} key={id}>

@@ -52,7 +52,7 @@ export class ContentAPI extends Component {
           <div className={css.SearchResults}>
             {this.state.isLoaded ? (
               this.state.posts.map(post => {
-                return <PostItemAPI posts={this.state.posts} key={post.title} post={post}/>
+                return <PostItemAPI savedPosts={this.state.posts} />
               })
             ) : (<Loader />)}
           </div>
